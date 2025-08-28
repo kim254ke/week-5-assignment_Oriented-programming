@@ -39,24 +39,25 @@ print(table1.details())
 
 # Activity 2: Animal Voices (Polymorphism)
 class Animal:
-    def speak(self):
-        print("This animal makes a sound.")
+    def move(self):
+        print("This animal moves somehow.")
 
 class Sheep(Animal):
-    def speak(self):
-        print("🐑 Sheep bleats: Baa Baa!")
+    def move(self):
+        print("🐑 Sheep moves while bleating: Baa Baa!")
 
 class Pig(Animal):
-    def speak(self):
-        print("🐖 Pig grunts: Oink Oink!")
+    def move(self):
+        print("🐖 Pig moves while grunting: Oink Oink!")
 
 class Goat(Animal):
-    def speak(self):
-        print("🐐 Goat bleats: Meeeh Meeeh!")
+    def move(self):
+        print("🐐 Goat moves while bleating: Meeeh Meeeh!")
 
-# Polymorphism 
-print("\n=== Animal Voices ===")
+# Polymorphism demo
+print("\n=== Animal Movements ===")
 animals = [Sheep(), Pig(), Goat()]
 
 for animal in animals:
-    animal.speak()
+    animal.move()
+
